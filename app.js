@@ -1,13 +1,24 @@
 
 const h1 =  document.querySelector("h1");
 let sound=document.querySelector("#keys");
-const img = document.querySelector("#drum")
+const img = document.querySelector("#drum");
+
+
+const boom = document.getElementById("boom");
+const clap = document.getElementById("clap");
+const hihat = document.getElementById("hihat");
+const kick = document.getElementById("kick");
+const openHat = document.getElementById("openHat");
+const ride = document.getElementById("ride");
+const snare = document.getElementById("snare");
+const tink = document.getElementById("tink");
+const tom = document.getElementById("tom");
 
 
 
 
 
-document.addEventListener("keypress", (event) => {
+document.addEventListener("keypress",  (event) => {
 	let keyPressed = event.key;
 	  if(keyPressed == "a"){
 		 soundBoom.currentTime = 0;
@@ -65,4 +76,74 @@ document.addEventListener("keyup", () =>{
    img.style.height="auto"
 })
 
+// mouse click functions ----------------------
 
+
+
+boom.addEventListener("click", () =>{
+	soundBoom.play();
+	boom.style.backgroundColor	= "white";
+	
+})
+clap.addEventListener("click", () =>{
+	soundClap.play();
+	clap.style.backgroundColor	= "white";
+})
+hihat.addEventListener("click", () =>{
+	soundHat.play();
+	hihat.style.backgroundColor	= "white";
+})
+kick.addEventListener("click", () =>{
+	soundKick.play();
+	kick.style.backgroundColor	= "white";
+})
+openHat.addEventListener("click", () =>{
+	soundOpen.play();
+	openHat.style.backgroundColor	= "white";
+})
+ride.addEventListener("click", () =>{
+	soundRide.play();
+	ride.style.backgroundColor	= "white";
+})
+snare.addEventListener("click", () =>{
+	soundSnare.play();
+	snare.style.backgroundColor	= "white";
+})
+tink.addEventListener("click", () =>{
+	soundTink.play();
+	tink.style.backgroundColor	= "white";
+})
+tom.addEventListener("click", () =>{
+	soundTom.play();
+	tom.style.backgroundColor	= "white";
+})
+
+
+
+boom.addEventListener("mouseout", () =>{
+	boom.style.backgroundColor = "#3E92CC";
+})
+clap.addEventListener("mouseout", () =>{
+	clap.style.backgroundColor = "#3E92CC";
+})
+hihat.addEventListener("mouseout", () =>{
+	hihat.style.backgroundColor = "#3E92CC";
+})
+kick.addEventListener("mouseout", () =>{
+	kick.style.backgroundColor = "#3E92CC";
+})
+openHat.addEventListener("mouseout", () =>{
+	openHat.style.backgroundColor = "#3E92CC";
+})
+ride.addEventListener("mouseout", () =>{
+	ride.style.backgroundColor = "#3E92CC";
+})
+snare.addEventListener("mouseout", () =>{
+	snare.style.backgroundColor = "#3E92CC";
+})
+tink.addEventListener("mouseout", () =>{
+	tink.style.backgroundColor = "#3E92CC";
+})
+tom.addEventListener("mouseout", () =>{
+	tom.style.backgroundColor = "#3E92CC";
+})

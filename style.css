@@ -21,16 +21,9 @@ body{
 
 }
 
-#boom,
-#clap,
-#hihat,
-#kick,
-#openHat,
-#ride,
-#snare,
-#tink,
-#tom{
+button {
 	border: 5px solid #2A628F;
+	color:#18435A;
 	height:10%;
 	width:10%;
 	display: flex;
@@ -40,8 +33,9 @@ body{
 	font-weight: 500;
 	border-radius: 20%;
 	background-color:#3E92CC;
-	color:#18435A;
 }
+
+
 
 /* ------------------------------------------- */
 
